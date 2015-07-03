@@ -6,4 +6,8 @@ defmodule Crywolf.PageController do
   def index(conn, _params) do
     render conn, "index.html"
   end
+
+  def runtime_error(conn, _params) do
+    raise RuntimeError, message: "Wolf!"
+  end
 end

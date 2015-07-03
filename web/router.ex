@@ -16,6 +16,8 @@ defmodule Crywolf.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+
+    get "/runtime_error", PageController, :runtime_error
   end
 
   # Other scopes may use custom stacks.
