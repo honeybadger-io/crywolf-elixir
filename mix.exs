@@ -34,6 +34,7 @@ defmodule Crywolf.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 1.0"},
      {:phoenix_live_reload, "~> 0.4", only: :dev},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:honeybadger, "~> 0.0.1", github: "honeybadger-io/honeybadger-elixir"}]
   end
 end

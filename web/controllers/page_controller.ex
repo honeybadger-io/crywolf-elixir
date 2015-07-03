@@ -1,5 +1,6 @@
 defmodule Crywolf.PageController do
   use Crywolf.Web, :controller
+  use Honeybadger.Plug
 
   plug :action
 
