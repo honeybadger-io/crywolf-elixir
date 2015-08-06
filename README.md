@@ -20,7 +20,7 @@ If you'd like to do it the old fashioned way, follow these steps:
    page
 3. Clone or download this app
 4. Install dependencies with `mix deps.get`
-5. Start Phoenix endpoint with `mix phoenix.server`
+5. Start Phoenix endpoint with `HONEYBADGER_API_KEY=your-api-key mix phoenix.server`
 
 Now you can visit `localhost:4000` from your browser.
 
