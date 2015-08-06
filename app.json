@@ -1,0 +1,17 @@
+{
+  "name": "Honeybadger example for Elixir",
+  "description": "A sample Elixir/Phoenix web application which reports errors to Honeybadger.",
+  "repository": "https://github.com/honeybadger-io/crywolf-elixir",
+  "logo": "https://www.honeybadger.io/images/logo.jpg",
+  "keywords": ["elixir", "erlang", "phoenix", "errors", "honeybadger"],
+  "addons": [ "honeybadger" ],
+  "buildpacks": [
+    {
+    "url": "https://github.com/HashNuke/heroku-buildpack-elixir.git",
+    "url": "https://github.com/gjaldon/heroku-buildpack-phoenix-static.git"
+  }
+  ],
+  "env": {
+    "HONEYBADGER_ENV": "production"
+  }
+}
