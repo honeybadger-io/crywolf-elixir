@@ -31,5 +31,5 @@ defmodule Crywolf.Endpoint do
     key: "_crywolf_key",
     signing_salt: "wkesWjxf"
 
-  plug :router, Crywolf.Router
+  plug Crywolf.Router
 end
