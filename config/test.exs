@@ -12,6 +12,7 @@ config :logger, level: :warn
 # Configure your database
 config :crywolf, Crywolf.Repo,
   adapter: Ecto.Adapters.Postgres,
+  pool: Ecto.Adapters.SQL.Sandbox,
   username: "postgres",
   password: "postgres",
   database: "crywolf_test",
