@@ -1,5 +1,6 @@
 defmodule Crywolf.Router do
   use Crywolf.Web, :router
+  use Honeybadger.Plug
 
   pipeline :browser do
     plug :accepts, ["html"]
