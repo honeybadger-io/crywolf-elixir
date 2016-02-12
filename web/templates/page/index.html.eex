@@ -1,3 +1,11 @@
 <ul>
   <li><a href="/runtime_error">Raise a RuntimeError.</a></li>
 </ul>
+
+<ul>
+  <li><a href="/async_error">Raise an error in a task.</a></li>
+</ul>
+
+<ul>
+  <li><a href="/key_error">Raise an error by accessing an invalid key on a struct.</a></li>
+</ul>
