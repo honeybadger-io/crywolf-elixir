@@ -33,3 +33,5 @@ config :crywolf, Crywolf.Repo,
   password: "postgres",
   database: "crywolf_dev",
   size: 10 # The amount of database connections in the pool
+
+config :honeybadger, :environment_name, :dev

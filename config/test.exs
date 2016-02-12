@@ -17,3 +17,5 @@ config :crywolf, Crywolf.Repo,
   password: "postgres",
   database: "crywolf_test",
   size: 1 # Use a single connection for transactional tests
+
+config :honeybadger, :environment_name, :test

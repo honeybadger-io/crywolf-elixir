@@ -21,6 +21,8 @@ defmodule Crywolf.Router do
     get "/runtime_error", PageController, :runtime_error
 
     get "/key_error", PageController, :key_error
+
+    get "/async_error", PageController, :async_error
   end
 
   # Other scopes may use custom stacks.

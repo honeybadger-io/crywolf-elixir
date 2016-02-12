@@ -26,7 +26,8 @@ config :crywolf, Crywolf.Router,
 
 config :honeybadger,
   app: :crywolf,
-  exclude_envs: []
+  exclude_envs: [],
+  use_logger: true
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
