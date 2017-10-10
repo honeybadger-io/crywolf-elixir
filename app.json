@@ -4,7 +4,7 @@
   "repository": "https://github.com/honeybadger-io/crywolf-elixir",
   "logo": "https://www.honeybadger.io/images/logo.jpg",
   "keywords": ["elixir", "erlang", "phoenix", "errors", "honeybadger"],
-  "addons": [ "honeybadger" ],
+  "addons": [ "heroku-postgresql", "honeybadger" ],
   "buildpacks": [
     {
       "url": "https://github.com/HashNuke/heroku-buildpack-elixir.git"
