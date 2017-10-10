@@ -5,12 +5,15 @@
 # is restricted to this project.
 use Mix.Config
 
+# General application configuration
+config :crywolf,
+  ecto_repos: [Crywolf.Repo]
+
 # Configures the endpoint
-config :crywolf, Crywolf.Endpoint,
+config :crywolf, CrywolfWeb.Endpoint,
   url: [host: "localhost"],
-  root: Path.dirname(__DIR__),
-  secret_key_base: "ePZ0ELXOJcnCQfUvhuoddWXkgFHTXSNleMHbMHs36ph1/RH5UwVQiV1/AaUBGNBQ",
-  debug_errors: false,
+  secret_key_base: "DpqjDvQZN7sHC+7r6gsS9H6oqB2kkQJcu8KmHkxBK92J2M/6RE+EIOL8ElvBO8Vn",
+  render_errors: [view: CrywolfWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Crywolf.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
@@ -19,14 +22,10 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
-# Default session store.
-config :crywolf, Crywolf.Router,
-  session: [store: :cookie,
-    key: "_crywolf_session"]
-
+# Configure Honeybadger
 config :honeybadger,
   app: :crywolf,
-  exclude_envs: [],
+  exclude_envs: [:test],
   use_logger: true
 
 # Import environment specific config. This must remain at the bottom

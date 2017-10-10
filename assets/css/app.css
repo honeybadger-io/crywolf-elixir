@@ -1,0 +1,19 @@
+/* This file is for your main application css. */
+
+.crywolf .header {
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+  .crywolf .header nav {
+    display: none;
+  }
+
+.crywolf .logo {
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+  margin-bottom: 1em;
+  background-image: url("/images/crywolf.svg");
+  background-size: 128px 128px;
+}
