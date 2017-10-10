@@ -59,9 +59,10 @@ config :logger, level: :info
 #     config :crywolf, CrywolfWeb.Endpoint, server: true
 #
 
-# Configure Honeybadger
-config :honeybadger, :environment_name, :prod
+config :crywolf, Crywolf.Endpoint,
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
 
-# Finally import the config/prod.secret.exs
-# which should be versioned separately.
-import_config "prod.secret.exs"
+config :crywolf, Crywolf.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: System.get_env("DATABASE_URL"),
+  size: 20 # The amount of database connections in the pool
